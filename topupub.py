@@ -251,7 +251,7 @@ def license_check():
     global USER_LICENSE_NAME, USER_LICENSE_EXPIRY_INFO, DEVICE_ID_INFO
     build_id_hash = dev_id()
     DEVICE_ID_INFO = build_id_hash
-    url = f'https://api.github.com/repos/Revansyabian/Top-up-bussid/contents/license/{build_id_hash}.json'
+    url = f'https://api.github.com/repos/Revansyabian/lisensi/contents/license/{build_id_hash}.json'
     ketik(f"\n{PURPLE}[{YELLOW}◆{PURPLE}] {RED}Memeriksa lisensi Anda...{PURPLE}", d=0.01)
     time.sleep(2)
 
