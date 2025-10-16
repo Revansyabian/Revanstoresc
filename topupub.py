@@ -12,10 +12,10 @@ from urllib.parse import quote
 import re
 import webbrowser
 
-WHITE = '\x1b[1;97m'
-YELLOW = '\x1b[38;5;226m'
-RED = '\x1b[38;5;196m'
-BLACK = '\x1b[38;5;8m'
+WHITE  = '\x1b[1;97m'
+YELLOW  = '\x1b[38;5;226m'
+RED  = '\x1b[38;5;196m'
+BLACK  = '\x1b[38;5;8m'
 GREEN = '\x1b[38;5;51m'
 green = '\x1b[38;5;46m'
 BLUE = '\x1b[38;5;14m'
@@ -251,7 +251,7 @@ def license_check():
     global USER_LICENSE_NAME, USER_LICENSE_EXPIRY_INFO, DEVICE_ID_INFO
     build_id_hash = dev_id()
     DEVICE_ID_INFO = build_id_hash
-    url = f'https://api.github.com/repos/revanstore235/revanstore/contents/lisensi/{build_id_hash}.json'
+    url = f'https://api.github.com/repos/revanstore235/revanstore/contents/lisensi/{build_id_hash}.json''
     ketik(f"\n{PURPLE}[{YELLOW}◆{PURPLE}] {RED}Memeriksa lisensi Anda...{PURPLE}", d=0.01)
     time.sleep(2)
 
@@ -693,7 +693,7 @@ def HapusAkun():
         berhasil = False
 
     nama_display_final = nama_akun_sebelum_fetch if nama_akun_sebelum_fetch else "N/A"
-    if berhasil:
+    if berhasil :
         nama_display_final = f"{nama_akun_sebelum_fetch if nama_akun_sebelum_fetch else 'Akun'} (Telah Dihapus)"
 
     tampilkan_detail_transaksi(nama_display_final, None, None, None, berhasil, jenis_transaksi_override="Hapus Akun")
@@ -803,12 +803,12 @@ def display_main_info_and_logo():
 
     info_pembuat = f"""
 {PURPLE}╔{border_fill_main}╗
-{PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝙉𝘼𝙈𝘼      {BLACK}»----{WHITE}➤ {GREEN}{USER_LICENSE_NAME.ljust(23)}{PURPLE}║
+{PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗡𝗔𝗠𝗔       {BLACK}»----{WHITE}➤ {GREEN}{USER_LICENSE_NAME.ljust(23)}{PURPLE}║
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗞𝗘𝗗𝗔𝗟𝗨𝗔𝗥𝗦𝗔    {BLACK}»----{WHITE}➤ {GREEN}{expiry_date_part.ljust(23)}{PURPLE}║
 {expiry_line_2_str}
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗜𝗗 𝗟𝗜𝗦𝗘𝗡𝗦𝗜    {BLACK}»----{WHITE}➤ {GREEN}{DEVICE_ID_INFO.ljust(23)}{PURPLE}║
 {PURPLE}╟{separator_fill_main}╢{WHITE}
-{PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗣𝗘𝗠𝗜𝗟𝗜𝗞       {BLACK}»----{WHITE}➤ {GREEN}{"𝗥𝙀𝙑𝘼𝙉 𝙎𝙏𝙊𝙍𝙀".ljust(23)}{PURPLE}║
+{PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗣𝗘𝗠𝗜𝗟𝗜𝗞       {BLACK}»----{WHITE}➤ {GREEN}{"𝗥𝗘𝗩𝗔𝗡 𝗦𝗧𝗢𝗥𝗘".ljust(23)}{PURPLE}║
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣      {BLACK}»----{WHITE}➤ {GREEN}{"089520418604".ljust(23)}{PURPLE}║
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠      {BLACK}»----{WHITE}➤ {GREEN}{"𝘁.𝗺𝗲/@Orangv34".ljust(23)}{PURPLE}║
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗬𝗧    {BLACK}»----{WHITE}➤ {GREEN}{"𝙍𝙀𝙑𝘼𝙉 𝙎𝙏𝙊𝙍𝙀".ljust(23)}{PURPLE}║
@@ -944,17 +944,17 @@ def main():
                 jum = input_jumlah()
             else:
                 jum = 1
-            if jum > 0:
+            if jum > 0 :
                 Gas(jum)
         elif pilihan == "16":
             Brp = input_nominal()
             jum = input_jumlah()
-            if jum > 0:
+            if jum > 0 :
                  Gas(jum)
         elif pilihan == "24":
             Brp = input_nominal(minus=True)
             jum = input_jumlah()
-            if jum > 0:
+            if jum > 0 :
                 Gas(jum)
         elif pilihan == "25":
             kuras_semua_uang()
