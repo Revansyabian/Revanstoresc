@@ -144,7 +144,7 @@ def license_exp(build_id_hash, expiry_date_str):
 {PURPLE}║        {RED}Yah, Lisensi Anda Telah Kedaluwarsa!{PURPLE}         ║
 {PURPLE}║        {RED}Kedaluwarsa pada: {tanggal_kedaluwarsa_lengkap}{PURPLE}         ║
 {PURPLE}╟─────────────────────────────────────────────────────╢
-{PURPLE}║  {YELLOW}Jangan khawatir, perpanjang lisensi Anda sekarang!{PURPLE} ║
+{PURPLE}║  {YELLOW}Jangan khawatir, Perpanjang lisensi Anda sekarang!{PURPLE} ║
 {PURPLE}║               {YELLOW}Pilih paket di bawah ini:{PURPLE}             ║
 {PURPLE}╟─────────────────────────────────────────────────────╢{WHITE}
 {PURPLE}║ {RED}【{WHITE}1{RED}】 {YELLOW}Perpanjang 1 MINGGU   {GREEN}Rp 10.000{PURPLE}               ║
