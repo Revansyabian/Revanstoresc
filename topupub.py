@@ -803,7 +803,7 @@ def display_main_info_and_logo():
 
     info_pembuat = f"""
 {PURPLE}╔{border_fill_main}╗
-{PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝙍𝙀𝙑𝘼𝙉 𝙎𝙏𝙊𝙍𝙀        {BLACK}»----{WHITE}➤ {GREEN}{USER_LICENSE_NAME.ljust(23)}{PURPLE}║
+{PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝙍𝙀𝙑𝘼𝙉 𝙎𝙏𝙊𝙍𝙀       {BLACK}»----{WHITE}➤ {GREEN}{USER_LICENSE_NAME.ljust(23)}{PURPLE}║
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗞𝗘𝗗𝗔𝗟𝗨𝗔𝗥𝗦𝗔    {BLACK}»----{WHITE}➤ {GREEN}{expiry_date_part.ljust(23)}{PURPLE}║
 {expiry_line_2_str}
 {PURPLE}║{RED}【{WHITE}✦{RED}】{YELLOW}𝗜𝗗 𝗟𝗜𝗦𝗘𝗡𝗦𝗜    {BLACK}»----{WHITE}➤ {GREEN}{DEVICE_ID_INFO.ljust(23)}{PURPLE}║
